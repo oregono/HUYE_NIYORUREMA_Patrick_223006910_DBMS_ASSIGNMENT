@@ -1,0 +1,239 @@
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>
+mysql> use RUHANDE
+Database changed
+mysql> SELECT *FROM NGOMA;
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+
+| ID   | FNAME      | LNAME      | GENDER | PROVINCE | DISTRICT  | SECTOR     | CELL      | EMAILADDRESS | TELENO    |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+
+|    2 | Gakuru     | theoneste  | Male   | Kigali   | Gasabo    | Kimironko  | Zindiro   | gakurutheo   | 783737387 |
+|    3 | Gasto      | Irene      | Male   | East     | Nyagatare | Nyabiteker | Rukoma    | irenegasto   | 735726762 |
+|    4 | Munyempari | Alphonse   | Male   | East     | Rwamagana | Musha      | Gahengeri | munyempari   |  78567567 |
+|    4 | Mukamurezi | Alphonsine | Female | East     | Rulindo   | Kagoyi     | Cyamatare | mukamurezi   | 764787487 |
+|    5 | Akimana    | Console    | Female | South    | Muhanga   | Kabgayi    | Cyohoha   | akimanacon   |  73787877 |
+|    5 | Yohana     | kanamugire | male   | South    | Huye      | ngoma      | Cyohoha   | yohanakana   |   3545454 |
+|    7 | Jesue      | Christ     | male   | Heaven   | Heaven    | Heaven     | Air       | jesuechris   |         0 |
+|    8 | Satani     | Things     | Male   | Fire     | Fire      | Cyaze      | Ewana     | satanithin   |  11111111 |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+
+8 rows in set (0.00 sec)
+
+
+
+
+mysql> INSERT INTO NGOMA VALUES('9','Mustafu','Heshima','Male','South','Muhanga','Rugamba','kibeho','Heshima@gmail.com','07864743');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> select *from ngoma;
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+
+| ID   | FNAME      | LNAME      | GENDER | PROVINCE | DISTRICT  | SECTOR     | CELL      | EMAILADDRESS | TELENO    |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+
+|    2 | Gakuru     | theoneste  | Male   | Kigali   | Gasabo    | Kimironko  | Zindiro   | gakurutheo   | 783737387 |
+|    3 | Gasto      | Irene      | Male   | East     | Nyagatare | Nyabiteker | Rukoma    | irenegasto   | 735726762 |
+|    4 | Munyempari | Alphonse   | Male   | East     | Rwamagana | Musha      | Gahengeri | munyempari   |  78567567 |
+|    4 | Mukamurezi | Alphonsine | Female | East     | Rulindo   | Kagoyi     | Cyamatare | mukamurezi   | 764787487 |
+|    5 | Akimana    | Console    | Female | South    | Muhanga   | Kabgayi    | Cyohoha   | akimanacon   |  73787877 |
+|    5 | Yohana     | kanamugire | male   | South    | Huye      | ngoma      | Cyohoha   | yohanakana   |   3545454 |
+|    7 | Jesue      | Christ     | male   | Heaven   | Heaven    | Heaven     | Air       | jesuechris   |         0 |
+|    8 | Satani     | Things     | Male   | Fire     | Fire      | Cyaze      | Ewana     | satanithin   |  11111111 |
+|    9 | Mustafu    | Heshima    | Male   | South    | Muhanga   | Rugamba    | kibeho    | Heshima@gm   |   7864743 |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+
+9 rows in set (0.00 sec)
+
+
+
+
+mysql>
+mysql> INSERT INTO NGOMA VALUES('10','mukamusoni','vatel','female','South','Ruhango','Rugamba','kibeho','mukamusoni@gnmail.com','078488');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> select *from ngoma;
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+
+| ID   | FNAME      | LNAME      | GENDER | PROVINCE | DISTRICT  | SECTOR     | CELL      | EMAILADDRESS | TELENO    |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+
+|    2 | Gakuru     | theoneste  | Male   | Kigali   | Gasabo    | Kimironko  | Zindiro   | gakurutheo   | 783737387 |
+|    3 | Gasto      | Irene      | Male   | East     | Nyagatare | Nyabiteker | Rukoma    | irenegasto   | 735726762 |
+|    4 | Munyempari | Alphonse   | Male   | East     | Rwamagana | Musha      | Gahengeri | munyempari   |  78567567 |
+|    4 | Mukamurezi | Alphonsine | Female | East     | Rulindo   | Kagoyi     | Cyamatare | mukamurezi   | 764787487 |
+|    5 | Akimana    | Console    | Female | South    | Muhanga   | Kabgayi    | Cyohoha   | akimanacon   |  73787877 |
+|    5 | Yohana     | kanamugire | male   | South    | Huye      | ngoma      | Cyohoha   | yohanakana   |   3545454 |
+|    7 | Jesue      | Christ     | male   | Heaven   | Heaven    | Heaven     | Air       | jesuechris   |         0 |
+|    8 | Satani     | Things     | Male   | Fire     | Fire      | Cyaze      | Ewana     | satanithin   |  11111111 |
+|    9 | Mustafu    | Heshima    | Male   | South    | Muhanga   | Rugamba    | kibeho    | Heshima@gm   |   7864743 |
+|   10 | mukamusoni | vatel      | female | South    | Ruhango   | Rugamba    | kibeho    | mukamusoni   |     78488 |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+
+10 rows in set (0.00 sec)
+
+
+
+
+mysql> alter table ngoma add status char(15);
+Query OK, 10 rows affected (0.07 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> select *from ngoma;
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+--------+
+| ID   | FNAME      | LNAME      | GENDER | PROVINCE | DISTRICT  | SECTOR     | CELL      | EMAILADDRESS | TELENO    | status |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+--------+
+|    2 | Gakuru     | theoneste  | Male   | Kigali   | Gasabo    | Kimironko  | Zindiro   | gakurutheo   | 783737387 | NULL   |
+|    3 | Gasto      | Irene      | Male   | East     | Nyagatare | Nyabiteker | Rukoma    | irenegasto   | 735726762 | NULL   |
+|    4 | Munyempari | Alphonse   | Male   | East     | Rwamagana | Musha      | Gahengeri | munyempari   |  78567567 | NULL   |
+|    4 | Mukamurezi | Alphonsine | Female | East     | Rulindo   | Kagoyi     | Cyamatare | mukamurezi   | 764787487 | NULL   |
+|    5 | Akimana    | Console    | Female | South    | Muhanga   | Kabgayi    | Cyohoha   | akimanacon   |  73787877 | NULL   |
+|    5 | Yohana     | kanamugire | male   | South    | Huye      | ngoma      | Cyohoha   | yohanakana   |   3545454 | NULL   |
+|    7 | Jesue      | Christ     | male   | Heaven   | Heaven    | Heaven     | Air       | jesuechris   |         0 | NULL   |
+|    8 | Satani     | Things     | Male   | Fire     | Fire      | Cyaze      | Ewana     | satanithin   |  11111111 | NULL   |
+|    9 | Mustafu    | Heshima    | Male   | South    | Muhanga   | Rugamba    | kibeho    | Heshima@gm   |   7864743 | NULL   |
+|   10 | mukamusoni | vatel      | female | South    | Ruhango   | Rugamba    | kibeho    | mukamusoni   |     78488 | NULL   |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+--------+
+10 rows in set (0.00 sec)
+
+
+
+
+mysql> update ngoma set status='Single' where id='8';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select *from ngoma;
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+--------+
+| ID   | FNAME      | LNAME      | GENDER | PROVINCE | DISTRICT  | SECTOR     | CELL      | EMAILADDRESS | TELENO    | status |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+--------+
+|    2 | Gakuru     | theoneste  | Male   | Kigali   | Gasabo    | Kimironko  | Zindiro   | gakurutheo   | 783737387 | NULL   |
+|    3 | Gasto      | Irene      | Male   | East     | Nyagatare | Nyabiteker | Rukoma    | irenegasto   | 735726762 | NULL   |
+|    4 | Munyempari | Alphonse   | Male   | East     | Rwamagana | Musha      | Gahengeri | munyempari   |  78567567 | NULL   |
+|    4 | Mukamurezi | Alphonsine | Female | East     | Rulindo   | Kagoyi     | Cyamatare | mukamurezi   | 764787487 | NULL   |
+|    5 | Akimana    | Console    | Female | South    | Muhanga   | Kabgayi    | Cyohoha   | akimanacon   |  73787877 | NULL   |
+|    5 | Yohana     | kanamugire | male   | South    | Huye      | ngoma      | Cyohoha   | yohanakana   |   3545454 | NULL   |
+|    7 | Jesue      | Christ     | male   | Heaven   | Heaven    | Heaven     | Air       | jesuechris   |         0 | NULL   |
+|    8 | Satani     | Things     | Male   | Fire     | Fire      | Cyaze      | Ewana     | satanithin   |  11111111 | Single |
+|    9 | Mustafu    | Heshima    | Male   | South    | Muhanga   | Rugamba    | kibeho    | Heshima@gm   |   7864743 | NULL   |
+|   10 | mukamusoni | vatel      | female | South    | Ruhango   | Rugamba    | kibeho    | mukamusoni   |     78488 | NULL   |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+--------+
+10 rows in set (0.00 sec)
+
+mysql>
+
+
+
+mysql> select *from ngoma where gender='male' and Province='kigali';
++------+--------+-----------+--------+----------+----------+-----------+---------+--------------+-----------+--------+
+| ID   | FNAME  | LNAME     | GENDER | PROVINCE | DISTRICT | SECTOR    | CELL    | EMAILADDRESS | TELENO    | status |
++------+--------+-----------+--------+----------+----------+-----------+---------+--------------+-----------+--------+
+|    2 | Gakuru | theoneste | Male   | Kigali   | Gasabo   | Kimironko | Zindiro | gakurutheo   | 783737387 | NULL   |
++------+--------+-----------+--------+----------+----------+-----------+---------+--------------+-----------+--------+
+1 row in set (0.00 sec)
+
+mysql>
+
+
+mysql> select *from ngoma where id='4' or PROVINCE='East';
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+--------+
+| ID   | FNAME      | LNAME      | GENDER | PROVINCE | DISTRICT  | SECTOR     | CELL      | EMAILADDRESS | TELENO    | status |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+--------+
+|    3 | Gasto      | Irene      | Male   | East     | Nyagatare | Nyabiteker | Rukoma    | irenegasto   | 735726762 | NULL   |
+|    4 | Munyempari | Alphonse   | Male   | East     | Rwamagana | Musha      | Gahengeri | munyempari   |  78567567 | NULL   |
+|    4 | Mukamurezi | Alphonsine | Female | East     | Rulindo   | Kagoyi     | Cyamatare | mukamurezi   | 764787487 | NULL   |
++------+------------+------------+--------+----------+-----------+------------+-----------+--------------+-----------+--------+
+3 rows in set (0.00 sec)
+
+mysql>
+
+
+
+
+
+mysql> alter table ngoma drop cell;
+Query OK, 10 rows affected (0.07 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> select *from ngoma
+    -> ;
++------+------------+------------+--------+----------+-----------+------------+--------------+-----------+--------+
+| ID   | FNAME      | LNAME      | GENDER | PROVINCE | DISTRICT  | SECTOR     | EMAILADDRESS | TELENO    | status |
++------+------------+------------+--------+----------+-----------+------------+--------------+-----------+--------+
+|    2 | Gakuru     | theoneste  | Male   | Kigali   | Gasabo    | Kimironko  | gakurutheo   | 783737387 | NULL   |
+|    3 | Gasto      | Irene      | Male   | East     | Nyagatare | Nyabiteker | irenegasto   | 735726762 | NULL   |
+|    4 | Munyempari | Alphonse   | Male   | East     | Rwamagana | Musha      | munyempari   |  78567567 | NULL   |
+|    4 | Mukamurezi | Alphonsine | Female | East     | Rulindo   | Kagoyi     | mukamurezi   | 764787487 | NULL   |
+|    5 | Akimana    | Console    | Female | South    | Muhanga   | Kabgayi    | akimanacon   |  73787877 | NULL   |
+|    5 | Yohana     | kanamugire | male   | South    | Huye      | ngoma      | yohanakana   |   3545454 | NULL   |
+|    7 | Jesue      | Christ     | male   | Heaven   | Heaven    | Heaven     | jesuechris   |         0 | NULL   |
+|    8 | Satani     | Things     | Male   | Fire     | Fire      | Cyaze      | satanithin   |  11111111 | Single |
+|    9 | Mustafu    | Heshima    | Male   | South    | Muhanga   | Rugamba    | Heshima@gm   |   7864743 | NULL   |
+|   10 | mukamusoni | vatel      | female | South    | Ruhango   | Rugamba    | mukamusoni   |     78488 | NULL   |
++------+-----
+-------+------------+--------+----------+-----------+------------+--------------+-----------+--------+
+10 rows in set (0.00 sec)
+
+mysql>
+
+
+
+
+mysql> select *from ngoma where gender='female' and district='south';
+Empty set (0.00 sec)
+
+mysql> select *from ngoma where gender='male' and province='south';
++------+---------+------------+--------+----------+----------+---------+--------------+---------+--------+
+| ID   | FNAME   | LNAME      | GENDER | PROVINCE | DISTRICT | SECTOR  | EMAILADDRESS | TELENO  | status |
++------+---------+------------+--------+----------+----------+---------+--------------+---------+--------+
+|    5 | Yohana  | kanamugire | male   | South    | Huye     | ngoma   | yohanakana   | 3545454 | NULL   |
+|    9 | Mustafu | Heshima    | Male   | South    | Muhanga  | Rugamba | Heshima@gm   | 7864743 | NULL   |
++------+---------+------------+--------+----------+----------+---------+--------------+---------+--------+
+2 rows in set (0.00 sec)
+
+mysql>
+
+
+
+
+
+
+
+mysql> UPDATE NGOMA SET ID='1' WHERE LNAME='theoneste';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select *from ngoma;
++------+------------+------------+--------+----------+-----------+------------+--------------+-----------+--------+
+| ID   | FNAME      | LNAME      | GENDER | PROVINCE | DISTRICT  | SECTOR     | EMAILADDRESS | TELENO    | status |
++------+------------+------------+--------+----------+-----------+------------+--------------+-----------+--------+
+|    1 | Gakuru     | theoneste  | Male   | Kigali   | Gasabo    | Kimironko  | gakurutheo   | 783737387 | NULL   |
+|    3 | Gasto      | Irene      | Male   | East     | Nyagatare | Nyabiteker | irenegasto   | 735726762 | NULL   |
+|    3 | Munyempari | Alphonse   | Male   | East     | Rwamagana | Musha      | munyempari   |  78567567 | NULL   |
+|    4 | Mukamurezi | Alphonsine | Female | East     | Rulindo   | Kagoyi     | mukamurezi   | 764787487 | NULL   |
+|    5 | Akimana    | KABAREBE   | Female | South    | Muhanga   | Kabgayi    | akimanacon   |  73787877 | NULL   |
+|    6 | Yohana     | KABAREBE   | male   | South    | Huye      | ngoma      | yohanakana   |   3545454 | NULL   |
+|    7 | Jesue      | Christ     | male   | Heaven   | Heaven    | Heaven     | jesuechris   |         0 | NULL   |
+|    8 | Satani     | Things     | Male   | Fire     | Fire      | Cyaze      | satanithin   |  11111111 | Single |
+|    9 | Mustafu    | Heshima    | Male   | South    | Muhanga   | Rugamba    | Heshima@gm   |   7864743 | NULL   |
+|   10 | mukamusoni | vatel      | female | South    | Ruhango   | Rugamba    | mukamusoni   |     78488 | NULL   |
++------+------------+------------+--------+----------+-----------+------------+--------------+-----------+--------+
+10 rows in set (0.00 sec)
+
+mysql> UPDATE NGOMA SET ID='2' WHERE LNAME='Irene';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select *from ngoma;
++------+------------+------------+--------+----------+-----------+------------+--------------+-----------+--------+
+| ID   | FNAME      | LNAME      | GENDER | PROVINCE | DISTRICT  | SECTOR     | EMAILADDRESS | TELENO    | status |
++------+------------+------------+--------+----------+-----------+------------+--------------+-----------+--------+
+|    1 | Gakuru     | theoneste  | Male   | Kigali   | Gasabo    | Kimironko  | gakurutheo   | 783737387 | NULL   |
+|    2 | Gasto      | Irene      | Male   | East     | Nyagatare | Nyabiteker | irenegasto   | 735726762 | NULL   |
+|    3 | Munyempari | Alphonse   | Male   | East     | Rwamagana | Musha      | munyempari   |  78567567 | NULL   |
+|    4 | Mukamurezi | Alphonsine | Female | East     | Rulindo   | Kagoyi     | mukamurezi   | 764787487 | NULL   |
+|    5 | Akimana    | KABAREBE   | Female | South    | Muhanga   | Kabgayi    | akimanacon   |  73787877 | NULL   |
+|    6 | Yohana     | KABAREBE   | male   | South    | Huye      | ngoma      | yohanakana   |   3545454 | NULL   |
+|    7 | Jesue      | Christ     | male   | Heaven   | Heaven    | Heaven     | jesuechris   |         0 | NULL   |
+|    8 | Satani     | Things     | Male   | Fire     | Fire      | Cyaze      | satanithin   |  11111111 | Single |
+|    9 | Mustafu    | Heshima    | Male   | South    | Muhanga   | Rugamba    | Heshima@gm   |   7864743 | NULL   |
+|   10 | mukamusoni | vatel      | female | South    | Ruhango   | Rugamba    | mukamusoni   |     78488 | NULL   |
++------+------------+------------+--------+----------+-----------+------------+--------------+-----------+--------+
+10 rows in set (0.00 sec)
